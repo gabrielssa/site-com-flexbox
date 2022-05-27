@@ -5,7 +5,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    padding-bottom: 300px;
 }
 
 header{
@@ -187,17 +186,18 @@ nav .active a, nav a:hover{
 }
 
 .department{
-    min-width: 158px;
-    min-height: 158px;
+    min-width: 8rem;
+    min-height: 8rem;
     background-color: #02A2D9;
     margin-bottom: 16px;
+    margin-left: 16px;
 }
 
 #departments{
     display: flex;
     flex-flow: wrap row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .appointment_text{
@@ -282,15 +282,205 @@ footer{
     background-color: #1e1e1e;
     display:flex;
     justify-content: center;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer_menu{
     display:flex;
     flex-direction: row;
-    width: inherit;
 }
 
 .fm1,.fm2,.fm3{
     flex:1;
+}
+
+.fm1{
+    background-color: #39aae1;
+}
+
+.fm2{
+    background-color: #0079c7;
+}
+
+.fm3{
+    background-color: #01428C;
+}
+
+.footer_menu a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: inherit;
+}
+
+.footer_area{
+    display:flex;
+    color: #fff;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.footer_areaitem{
+    flex:1;
+}
+
+.footer_menu_text{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+footer .widget_title_text{
+    color:white;
+}
+
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.gray-text{
+    color:#5F5D5F;
+}
+
+.adress_container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.adress_container p{
+    flex: 3 0 45%;
+}
+
+.adress_container p, .adress_title{
+    margin:2px;
+    font-size: 14px;
+}
+
+.adress_title{
+    margin-top: 25px;
+}
+
+.white-text{
+    color: white;
+}
+
+.gray-text{
+    font-size: 14px;
+}
+
+.widget_body_latest{
+    font-size: 14px;
+}
+.widget_body_latest li{
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+.widget_body_latest ul{
+    list-style: "➟  ";
+}
+
+.widget_body_latest li span{
+    display:block;
+    font-size: 12px;
+    color: #026FC7;
+    margin-top: 5px;
+}
+
+.menuMobile{
+    display:none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    height: 3px;
+    background-color: #31A0DE;
+}
+
+@media (max-width:600px){
+
+    #banner{
+        height: fit-content;
+    }
+
+    .banner_headline{
+        padding: 20px;
+    }
+
+    .banner_headline h1{
+        font-size: 55px;
+    }
+
+    .banner_headline h2{
+        font-size: 17px;
+       
+    }
+
+    .banner_options{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .footer_area{
+        flex-direction: column;
+        padding:20px;
+    }
+
+    .footer_copy{
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    header{
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
